@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class IMCCalculatorTest {
 
+
     @Test
     void testIMCCalculate() {
         Person person = new Person(74.00, 1.68);
@@ -16,4 +17,18 @@ public class IMCCalculatorTest {
         
     }
 
-}
+    @Test
+    void testGetCategory() {
+        IMCCalculator imcCalculator = new IMCCalculator();
+        
+        assertEquals("Delgadez severa", imcCalculator.getCategory(15.00));
+        assertEquals("Delgadez moderada", imcCalculator.getCategory(16.50));
+        assertEquals("Delgadez leve", imcCalculator.getCategory(17.50));
+        assertEquals("Normal", imcCalculator.getCategory(20.00));
+        assertEquals("Sobrepeso", imcCalculator.getCategory(26.00));
+        assertEquals("Obesidad leve", imcCalculator.getCategory(31.00));
+        assertEquals("Obesidad moderada", imcCalculator.getCategory(37.00));
+        assertEquals("Obesidad mórbida", imcCalculator.getCategory(42.00));
+    }
+        
+    }
