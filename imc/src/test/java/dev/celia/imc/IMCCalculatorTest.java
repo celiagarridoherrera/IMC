@@ -12,7 +12,7 @@ public class IMCCalculatorTest {
         IMCCalculator imcCalculator = new IMCCalculator();
         double expectedIMC = 74.00 / Math.pow(1.68, 2);
         
-        assertEquals(expectedIMC, calculator.calculateIMC(person), 0.01);
+        assertEquals(expectedIMC, imcCalculator.calculateIMC(person), 0.01);
         
     }
 

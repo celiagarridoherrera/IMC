@@ -13,6 +13,4 @@ public class Person {
     public double getHeight() {
         return height;
     }
-
-    
-    }
+}
