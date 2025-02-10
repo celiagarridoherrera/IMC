@@ -24,7 +24,7 @@ public class IMCCalculatorTest {
         assertEquals("Delgadez severa", imcCalculator.getCategory(15.00));
         assertEquals("Delgadez moderada", imcCalculator.getCategory(16.50));
         assertEquals("Delgadez leve", imcCalculator.getCategory(17.50));
-        assertEquals("Normal", imcCalculator.getCategory(20.00));
+        assertEquals("Peso Normal", imcCalculator.getCategory(20.00));
         assertEquals("Sobrepeso", imcCalculator.getCategory(26.00));
         assertEquals("Obesidad leve", imcCalculator.getCategory(31.00));
         assertEquals("Obesidad moderada", imcCalculator.getCategory(37.00));
